@@ -1,11 +1,8 @@
 import React from "react";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
 import { motion } from "framer-motion";
 
 const About: React.FC = () => (
   <>
-    <Header />
     <main className="bg-background min-h-screen">
       <section className="max-w-content mx-auto px-6 py-section">
         <motion.h1
@@ -72,7 +69,6 @@ const About: React.FC = () => (
         </motion.div>
       </section>
     </main>
-    <Footer />
   </>
 );
 

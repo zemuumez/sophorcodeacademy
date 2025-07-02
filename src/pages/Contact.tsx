@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
 import { motion } from "framer-motion";
 
 const initialForm = {
@@ -34,7 +32,6 @@ const Contact: React.FC = () => {
 
   return (
     <>
-      <Header />
       <main className="bg-background min-h-screen">
         <section className="max-w-lg mx-auto px-6 py-section">
           <motion.h1
@@ -125,7 +122,6 @@ const Contact: React.FC = () => {
           </div>
         </section>
       </main>
-      <Footer />
     </>
   );
 };

@@ -1,6 +1,4 @@
 import React from "react";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
 import FeaturesSection from "../components/FeaturesSection";
 import CoursesCarousel from "../components/CoursesCarousel";
 import TestimonialsSection from "../components/TestimonialsSection";
@@ -9,7 +7,6 @@ import CallToActionSection from "../components/CallToActionSection";
 const Home: React.FC = () => {
   return (
     <>
-      <Header />
       <main className="bg-background min-h-screen">
         {/* Hero Section Placeholder */}
         <section className="flex flex-col items-center justify-center py-section text-center">
@@ -33,7 +30,6 @@ const Home: React.FC = () => {
         <CallToActionSection />
         {/* More sections (Testimonials, Call to Action, etc.) will go here */}
       </main>
-      <Footer />
     </>
   );
 };

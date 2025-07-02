@@ -1,0 +1,208 @@
+{
+  "designSystem": {
+    "name": "Dark EdTech Bootcamp Landing",
+    "theme": {
+      "colorPalette": {
+        "primary": "#84f25b",
+        "secondary": "#0f0f0f",
+        "background": "#121212",
+        "surface": "#1c1c1c",
+        "textPrimary": "#ffffff",
+        "textSecondary": "#cccccc",
+        "accent": "#5be26e",
+        "muted": "#2a2a2a"
+      },
+      "typography": {
+        "fontFamily": "Sans-serif, modern",
+        "headings": {
+          "weight": "700",
+          "sizes": ["48px", "36px", "28px", "20px"]
+        },
+        "body": {
+          "weight": "400",
+          "sizes": ["18px", "16px", "14px"]
+        },
+        "button": {
+          "weight": "600",
+          "uppercase": true
+        }
+      },
+      "shadows": {
+        "card": "0 4px 12px rgba(0,0,0,0.4)",
+        "button": "0 2px 6px rgba(0,0,0,0.3)"
+      },
+      "borderRadius": "8px"
+    },
+    "layout": {
+      "maxWidth": "1200px",
+      "gridSystem": {
+        "columns": 12,
+        "gutter": "24px"
+      },
+      "spacing": {
+        "sectionPadding": "80px",
+        "elementGap": "24px",
+        "responsive": {
+          "tablet": "64px",
+          "mobile": "32px"
+        }
+      },
+      "responsiveBreakpoints": ["1440px", "1024px", "768px", "480px"]
+    },
+    "components": {
+      "header": {
+        "layout": "horizontal",
+        "elements": ["logo", "navLinks", "ctaButton"],
+        "background": "transparent/dark overlay",
+        "scrollBehavior": "sticky",
+        "responsiveBehavior": "collapsibleMenu"
+      },
+      "heroSection": {
+        "layout": "split",
+        "leftContent": ["headline", "subhead", "primaryButton"],
+        "rightContent": ["illustrationOrMockup"],
+        "background": "dark gradient or solid",
+        "textAlignment": "center on mobile",
+        "responsiveStack": true
+      },
+      "statsRow": {
+        "layout": "horizontalIcons",
+        "items": 3,
+        "style": {
+          "icons": "minimalLineArt",
+          "text": "mutedSecondary"
+        }
+      },
+      "featuresSection": {
+        "layout": "horizontalCards",
+        "cardStyle": {
+          "background": "surface",
+          "borderRadius": "8px",
+          "shadow": "card",
+          "hoverEffect": "glow"
+        },
+        "elements": ["icon", "title", "description"],
+        "responsiveStack": true
+      },
+      "coursesSection": {
+        "layout": "cardGrid",
+        "columns": 3,
+        "cardStyle": {
+          "background": "surface",
+          "borderRadius": "8px",
+          "shadow": "card",
+          "hoverEffect": "scaleSlightly"
+        },
+        "responsive": {
+          "tabletColumns": 2,
+          "mobileColumns": 1
+        }
+      },
+      "testimonialsSection": {
+        "layout": "gridCards",
+        "columns": 2,
+        "elements": ["avatar", "quote", "authorName"],
+        "background": "surface",
+        "shadow": "card",
+        "responsive": {
+          "mobileColumns": 1
+        }
+      },
+      "teamSection": {
+        "layout": "profileCards",
+        "style": {
+          "imageStyle": "rounded",
+          "background": "surface",
+          "shadow": "card"
+        },
+        "elements": ["photo", "name", "role"]
+      },
+      "pricingSection": {
+        "layout": "cardRow",
+        "columns": 3,
+        "cardStyle": {
+          "background": "surface",
+          "borderRadius": "8px",
+          "shadow": "card",
+          "highlightedCard": "accent border or glow"
+        },
+        "elements": ["planName", "price", "features", "ctaButton"],
+        "responsive": {
+          "tabletColumns": 2,
+          "mobileColumns": 1
+        }
+      },
+      "faqSection": {
+        "layout": "accordion",
+        "style": {
+          "background": "surface",
+          "borderRadius": "8px",
+          "shadow": "none"
+        }
+      },
+      "blogSection": {
+        "layout": "horizontalScrollCards",
+        "cardStyle": {
+          "background": "surface",
+          "borderRadius": "8px",
+          "shadow": "card"
+        },
+        "navigation": "arrows or swipe",
+        "responsive": {
+          "mobileColumns": 1
+        }
+      },
+      "footer": {
+        "layout": "multiColumn",
+        "columns": 3,
+        "background": "surface",
+        "elements": ["navLinks", "contactInfo", "socialIcons"],
+        "responsiveStack": true
+      },
+      "contactForm": {
+        "layout": "stacked",
+        "fields": ["name", "email", "message"],
+        "buttonStyle": {
+          "background": "primary",
+          "textColor": "black",
+          "hoverEffect": "invert"
+        },
+        "background": "surface",
+        "borderRadius": "8px",
+        "shadow": "card"
+      }
+    },
+    "interactions": {
+      "buttons": {
+        "hoverEffect": "backgroundGlow",
+        "activeEffect": "scaleSlightly",
+        "transition": "200ms ease-in-out"
+      },
+      "cards": {
+        "hoverEffect": "elevationIncrease or glow",
+        "transition": "300ms ease"
+      },
+      "accordion": {
+        "animation": "smoothCollapse",
+        "duration": "300ms"
+      },
+      "scroll": {
+        "behavior": "smooth",
+        "inertia": true
+      }
+    },
+    "imagery": {
+      "style": "3D-style illustrations or mockups",
+      "shapes": "roundedCorners",
+      "aspectRatios": ["16:9", "1:1"],
+      "preferredUsage": "high-quality, consistent color theme"
+    },
+    "bestPractices": [
+      "Maintain high contrast between text and background.",
+      "Use accent green only for CTAs or highlights.",
+      "Limit box shadows to cards and key callouts.",
+      "Ensure all animations respect reduced-motion preferences.",
+      "Optimize for mobile-first responsive layouts."
+    ]
+  }
+}
